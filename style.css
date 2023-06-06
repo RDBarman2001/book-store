@@ -3,73 +3,92 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-}
-
-header {
-    background-color: #333;
+    background-color: #bed4ff; /* Set the background color of the body */
+  }
+  
+  header {
+    background-color: #147ded;
     color: #fff;
     padding: 10px;
-}
-
-header h1 {
+    height: 50px;
+  }
+  
+  header h1 {
     margin: 0;
-}
-
-nav ul {
-    margin: 0;
+  }
+  
+  nav ul {
+    margin-top: -30px;
     padding: 0;
     list-style: none;
-}
-
-nav li {
+    display: flex; /* Align items side by side */
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  nav li {
     display: inline;
-
     margin-right: 10px;
-}
-
-nav li a {
+    border-radius: 10px; /* Add border radius */
+  }
+  
+  nav li a {
     color: #fff;
     text-decoration: none;
-}
-
-main {
+    border: 1px solid #fff; /* Add border */
+    padding: 5px 10px; /* Add padding */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    border-radius: 5px;
+  }
+  
+  main {
     padding: 20px;
-}
-
-#books {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.book {
-    margin: 20px;
+  }
+  
+  #books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .book {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-    flex: 1 1 400px;
-    
-}
-
-.book img {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    border-radius: 5px;
+  }
+  
+  .book img {
     max-width: 100%;
-}
-
-.book h3 {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .book h3 {
     margin: 10px 0;
-}
-
-.book p {
+  }
+  
+  .book p {
     margin: 5px 0;
-}
-
-.book button {
+  }
+  
+  .book button {
     background-color: #333;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-}
-
-.book button:hover {
+    border-radius: 5px;
+  }
+  
+  .book button:hover {
     background-color: #444;
-}
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
